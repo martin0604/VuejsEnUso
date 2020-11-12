@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" charset="utf-8">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-indigo.min.css" charset="utf-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16"></script>
+    
+
+<style>
+
+.cartas-info-meta {
+  width: 100%;
+  min-width:150px;
+  height: 110px;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.pie-info-meta {
+  /*width: 268px;*/
+  width: 100%;
+  min-width:150px;
+  height: 40px;
+  color: #FFF;
+  display:flex;
+  justify-content: space-between;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.redondeado {
+  border-radius: 8px;
+}
+
+.redondeado_progreso {
+  border-radius: 5px;
+}
+
+.caja-contenedora-datos{
+  width:80%;
+}
+
+.centrar-contenido{
+  display: flex;
+  justify-content: center;
+}
+
+    </style>
+</head>
+
+<body>
+    <div id="contenedor">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+        <!-- Inicio sección de encabezado-->
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row mdl-color--white mdl-color-text--grey-600">
+                <div class="mdl-layout-spacer"></div>
+                <span class="mdl-layout-title">Nombre de Usuario</span>
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
+                    <i class="material-icons">more_vert</i>
+                </button>
+                <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
+                    <li class="mdl-menu__item">Cerrar sesion</li>
+                </ul>
+            </div>
+        </header>
+        <!-- Fin sección de encabezado -->
+
+        <!-- Inicio sección barra lateral izquierda-->
+        <div class="mdl-layout__drawer mdl-color--primary-dark" >
+
+
+        </div>
+        <!-- Fin sección barra lateral izquierda -->
+
+        <main class="mdl-layout__content mdl-color--blue-grey-50">
+            <!--Aqui en esta seccion va el contenido-->
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--12-col">
+                    <div class="mdl-grid mdl-shadow--2dp redondeado"
+                            style="background-color:#f8f8f8; background-size: 100% 100%;">
+                            <div class="mdl-cell mdl-cell--12-col">
+                                <div class="mdl-grid">
+                                    <div class="mdl-cell mdl-cell--2-offset mdl-cell-4-col mdl-color-text--grey">
+                                        <div
+                                            style="display: flex; justify-content: center; background-color: rgb(255, 255, 255); padding: 6px; border-radius: 8px;">
+                                            PRODUCTO</div>
+                                    </div>
+                                    <!--<div class="mdl-cell mdl-cell--1-offset mdl-cell--4-col mdl-color-text--grey">
+                              <div style="display: flex; justify-content: center; background-color: rgb(255, 255, 255); padding: 6px; border-radius: 8px;">PUERTA
+                                PRINCIPAL NUM TRES</div>
+                            </div>-->
+                                    <div class="mdl-cell mdl-cell-4-col mdl-color-text--grey">
+                                        <div
+                                            style="display: flex; justify-content: center; background-color: rgb(255, 255, 255); padding: 6px; border-radius: 8px;">
+                                            NOMBRE DE PUNTO</div>
+                                    </div>
+                                </div>
+
+
+                                <div class="mdl-grid">
+                                    <div class="mdl-cell mdl-cell--9-col">
+                                        <div class="mdl-grid" style="display: flex; justify-content: space-between;">
+                                            <div class="mdl-cell mdl-cell--4-col centrar-contenido" style="margin:0px;">
+                                                <div class="caja-contenedora-datos">
+                                                    <div style="background-color: rgb(81, 172, 221);"
+                                                        class="cartas-info-meta">
+                                                        <p class="text-box" style="font-size: 1.5rem;">$950000</p>
+                                                        
+                                                    </div>
+                                                    <div style="background: none repeat scroll 0% 0% rgb(65, 138, 177);"
+                                                        class="pie-info-meta">
+                                                        <div style="margin: 10px;">
+                                                            <p>META</p>
+                                                        </div>
+                                                        <div style="margin: 10px;"><i class="material-icons">home</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mdl-cell mdl-cell--4-col centrar-contenido" style="margin:0px;">
+                                                <div class="caja-contenedora-datos ">
+                                                    <div style="background: none repeat scroll 0% 0% rgb(29, 191, 201);"
+                                                        class="cartas-info-meta">
+                                                        <div>
+                                                            <p class="text-box" style="font-size: 1.5rem;">$767550</p>
+                                                        </div>
+                                                    </div>
+                                                    <div style="background: none repeat scroll 0% 0% rgb(23, 153, 161);"
+                                                        class="pie-info-meta">
+                                                        <div style="margin: 10px;">
+                                                            <p>VENTA</p>
+                                                        </div>
+                                                        <div style="margin: 10px;"><i
+                                                                class="material-icons">swap_vert</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mdl-cell mdl-cell--4-col centrar-contenido" style="margin:0px;">
+                                                <div class="caja-contenedora-datos ">
+                                                    <div style="background: none repeat scroll 0% 0% #e11d50;"
+                                                        class="cartas-info-meta">
+                                                        <p class="text-box" style="font-size: 1.5rem;">$-182459</p>
+                                                    </div>
+                                                    <div style="background: none repeat scroll 0% 0% #b51741;"
+                                                        class="pie-info-meta">
+                                                        <div style="margin: 10px;">
+                                                            <p>SALDO</p>
+                                                        </div>
+                                                        <div style="margin: 10px;"><i
+                                                                class="material-icons">assignment_returned</i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mdl-cell mdl-cell--3-col">
+                                      <!--<div class="redondeado" style="display: flex; flex-direction:column; align-items:center; background-color:white; height:215px;">
+                                       <div style="margin: 3%;">-->
+                                       <svg style="margin: 0 auto; display: block;" width="200px" height="210px">
+                                        <path d="M 100 100 L 100 0  A 100 100, 0, 1, 1, 30.18345810065273 28.40635169781692 Z" fill="#1dbfc9"></path>
+                                        <path d="M 100 100 L 30.18345810065273 28.40635169781692  A 100 100, 0, 0, 1, 99.99999999999997 0 Z" fill="#e11d50"></path>
+                                           <circle cx="100" cy="100" r="42" fill="#1799a1"/>
+                                           <text text-anchor="middle" fill="white" font-size="19" y="105" x="50%">87.70%</text>  
+                                       </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+
+            <div class="mdl-cell mdl-cell--12-col">
+                <div class="mdl-grid redondeado" style="background-color: white;">
+                    <div class="mdl-cell mdl-cell--12-col ">
+                        <div style="display: flex; justify-content: space-between;">
+                        <div class="mdl-typography--title mdl-color-text--grey-700" style="font-size: 15px;font-weight: 600;margin-top: 5px;">PUNTOS</div>
+                        <div style="display: flex;">
+                        <label class="mdl-typography--body-1 mdl-color-text--grey-700" style="margin-right: 13px;">DIAS</label><br>
+                        <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch_dias" style="margin-right: 13px;">
+                            <input type="checkbox" id="switch_dias" class="mdl-switch__input">
+                            <span class="mdl-switch__label"></span>
+                        </label>
+                        </div>
+                        </div>
+
+                        <div class="centrar-contenido">
+                            <div style="display: flex; flex-direction: column; align-items: center;">
+                            <p class="mdl-typography--title mdl-color-text--grey" style="margin-bottom: 4px !important;">Rango de Fechas</p>
+                            <p class="mdl-typography--title mdl-color-text--grey-700" style="font-size: 17px;font-weight: 600;">01/11/2020 a 24/11/2020</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-color--cyan-600" >
+                                    Reporte
+                                </button>
+                            </div>
+                            <div>
+                               <!--<label class="mdl-typography--title mdl-color-text--grey-700" style="font-size: 13px;font-weight: 600;">Buscar</label><br>-->
+                               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label " style="width: 250px;">
+                                <label class="mdl-textfield__label" for="buscar">Busqueda</label>
+                                 <input class="mdl-textfield__input" type="text" id="buscar" v-model="busqueda">
+                               </div>
+                            </div>
+                        </div>
+
+                        <tabla_detalle_seguimiento v-bind:datos_seguimiento="datos_seguimiento_mostrados"></tabla_detalle_seguimiento>
+                        <div style="display: flex; justify-content: right; align-items:center;">
+                            <label>Página {{ pagina }} de {{ numeroDePaginas }}</label>
+                            <div>
+                              
+                              <button class="mdl-button mdl-js-button mdl-button--icon" v-if="pagina == 1" disabled>
+                              <i class="material-icons"> chevron_left </i></button>
+                              <button class="mdl-button mdl-js-button mdl-button--icon" @click="pagina--" v-else>
+                                  <i class="material-icons"> chevron_left </i></button>
+                            </div>
+                            <div>
+
+                              <button class="mdl-button mdl-js-button mdl-button--icon" v-if="pagina == numeroDePaginas" disabled>
+                                <i class="material-icons">chevron_right</i></button>
+                              <button class="mdl-button mdl-js-button mdl-button--icon" @click="pagina++" v-else>
+                                <i class="material-icons">chevron_right</i></button>
+                            </div>
+                        </div>
+                        <div>
+                        <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" >
+                            Rango de Fechas
+                        </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+    </div>
+
+    
+    <script type="text/javascript" src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script type="text/javascript" src="./seguimiento.js"></script>
+</body>
+
+</html>
