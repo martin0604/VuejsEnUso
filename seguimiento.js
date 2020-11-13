@@ -59,6 +59,7 @@ function filtrarRegistros(datos, palabra) {
 var app = new Vue({
     el: '#contenedor',
     data: {
+        //Propiedad que contiene el listado de puntos o sucursales
         datos_seguimiento: [
             {codigo: "1001", nombre:"Punto 1", venta:45000, meta: 67000},
             {codigo: "1002", nombre:"Punto 2", venta:45000, meta: 67000},
@@ -82,17 +83,20 @@ var app = new Vue({
             {codigo: "1020", nombre:"Punto 20", venta:45000, meta: 67000},
             {codigo: "1021", nombre:"Punto 21", venta:45000, meta: 67000}
         ],
-        datos_seguimiento_filtrado: [],
-        pagina:1,
-        numeroDePaginas:1,
-        porPagina: 7,
-        busqueda: ""
+        datos_seguimiento_filtrado: [],//Aloja los puntos filtrados
+        pagina:1, //Pagina actual
+        numeroDePaginas:1, //Numero de paginas
+        porPagina: 7, //El numero de registros que se muestran por pagina
+        busqueda: "", //Propiedad enlazada con el campo de busqueda. Tiene un watcher para ejecutar la funcion de busqueda
+        titulo_blateral_nivel1: "EMPRESA",
+        listado_blateral_nivel1: [
+            {codigo: "2001", nombre:"Zona 1"},
+            {codigo: "2002", nombre:"Zona 2"},
+            {codigo: "2003", nombre:"Zona 3"},
+            {codigo: "2004", nombre:"Zona 4"},
+        ]
     },
     methods: {
-        formato_numero: function(num) {
-            return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
-        },
-
         filtrar: function () {
             this.datos_seguimiento_filtrado = filtrarRegistros(this.datos_seguimiento, this.busqueda);
         },
@@ -117,7 +121,6 @@ var app = new Vue({
     created() {
         this.filtrar();
         this.establecer_paginas();
-        //this.paginar(this.datos_seguimiento_filtrado);
     },
 
     watch: {

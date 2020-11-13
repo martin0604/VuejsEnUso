@@ -71,8 +71,29 @@
 
         <!-- Inicio sección barra lateral izquierda-->
         <div class="mdl-layout__drawer mdl-color--primary-dark" >
-
-
+            <div style="position:relative; display: flex; width: 200%; height: 80%;">
+                <div id="cajadetalle_nivel_1"
+                style=" display: flex; flex-direction: column; width: 50%; transition: transform 1s;">
+                <div class="centrar-contenido" style="margin: 10px;"><span class="mdl-layout-title" style="color: white;">{{ titulo_blateral_nivel1 }}</span></div>
+                
+                <ul class="demo-list-item mdl-list" id="lista_nivel_1" style="overflow-x: hidden;">
+                    <li v-for="dato in listado_blateral_nivel1" style="height: 54px;overflow: hidden;">
+                      <div class="uenboton" style="color: white; height: 56px; transition: 0.4s; padding: 0px 9px 0px 9px; margin-bottom: 5px;cursor:pointer;" >
+                          <div class="mdl-grid " style="margin: 0px;width: 100%; ">
+                              <div class="mdl-cell mdl-cell--10-col"  style="margin: 0px;">
+                                <div class="mdl-cell mdl-cell--12-col"  style="margin: 0px;font-weight: 300;font-size: 0.8rem;">{{ dato.nombre }}</div>
+                                <div class="mdl-cell mdl-cell--12-col"  style="margin: 0px;line-height: 1;font-weight: 600;">{{ dato.codigo }}</div>
+                              </div>
+                              <div class="mdl-cell mdl-cell--2-col"  style="margin: 0 auto;">
+                                  <i class="material-icons" style="margin-top:8px;">chevron_right</i>
+                              </div>
+                          </div>                            
+                      </div>.
+                    </li>
+                  </ul> 
+                </div>
+            
+            </div>
         </div>
         <!-- Fin sección barra lateral izquierda -->
 
